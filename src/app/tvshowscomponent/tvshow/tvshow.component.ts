@@ -15,7 +15,7 @@ export class TvshowComponent implements OnInit {
   }
 
   openfunction(){
-    this.service.getalltvshow().subscribe((data) =>{
+    this.service.getalltvshow().subscribe((data: any) =>{
       this.alltvshowdata = data;
       this.alltvshowdata = this.alltvshowdata['results'];
       console.log(this.alltvshowdata);
@@ -41,7 +41,7 @@ export class TvshowComponent implements OnInit {
         this.componentflag=true;
       }, 500);
       this.service.tvpagenumber -=1
-      this.service.getalltvshow().subscribe((data) =>{
+      this.service.getalltvshow().subscribe((data: any) =>{
         this.alltvshowdata = data;
         this.alltvshowdata = this.alltvshowdata['results'];
         console.log(this.alltvshowdata);
@@ -60,7 +60,7 @@ export class TvshowComponent implements OnInit {
         this.componentflag=true;
       }, 500);
       this.service.tvpagenumber +=1
-      this.service.getalltvshow().subscribe((data) =>{
+      this.service.getalltvshow().subscribe((data: any) =>{
         this.alltvshowdata = data;
         this.alltvshowdata = this.alltvshowdata['results'];
         console.log(this.alltvshowdata);
@@ -74,7 +74,7 @@ export class TvshowComponent implements OnInit {
 
   sendsearchdata(datastr: string){
     if(datastr != ''){
-      this.service.getsearchdata(datastr).subscribe((data) =>{
+      this.service.getsearchdata(datastr).subscribe((data: any) =>{
         this.alltvshowdata = data; 
         this.alltvshowdata = this.alltvshowdata['results'];       
       });
