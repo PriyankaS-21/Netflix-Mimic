@@ -1,7 +1,7 @@
 {
   "name": "angularproject",
   "version": "0.0.0",
-  "homepage": "https://priyankas-21.github.io/simplenetflixclone/",
+  "homepage": "https://priyankas-21.github.io/simplenetflixclone",
 
   "scripts": {
     "ng": "ng",
