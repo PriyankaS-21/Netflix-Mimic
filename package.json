@@ -1,7 +1,7 @@
 {
   "name": "angularproject",
   "version": "0.0.0",
-  "homepage": "https://github.com/PriyankaS-21/simplenetflixclone",
+  "homepage": "https://github.com/PriyankaS-21/simplenetflixclone/src",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
